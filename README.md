@@ -18,8 +18,10 @@ To set the current on the Big-Easy for your motor:
 Imax = Vref / (8 * 0.11)
 or
 Imax = Vref / .88
+or
+Vref = Imax * 0.88
 ```
-So, if you want 1 amp current, you need vref to show 1.137 volts
+So, if you want 1 amp current, you need vref to show .88 volts.  1.5 amps means 1.32v.
 
 # BLE interface update
 Inherited from ble_stepper:
