@@ -12,6 +12,15 @@ Big-easy connection summary:
 * Shared Dir...see phase 1 assumption below.
 * Power:  will start by seeing if one 12v wart has enough juice to drive both boards.   Can go to two if necessary.
 
+## A note on current:
+To set the current on the Big-Easy for your motor:  
+```
+Imax = Vref / (8 * 0.11)
+or
+Imax = Vref / .88
+```
+So, if you want 1 amp current, you need vref to show 1.137 volts
+
 # BLE interface update
 Inherited from ble_stepper:
 * Set step size (1,2,4,8,16)
